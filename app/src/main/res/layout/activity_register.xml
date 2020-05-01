@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- appBar controller-->
+    <LinearLayout
+        android:id="@+id/appbar_menu_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/registerBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- arrow black -->
+            <ImageView
+                android:id="@+id/image_arrow_back_register"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:clickable="true"/>
+
+            <!-- text title-->
+            <TextView
+                android:gravity="center_horizontal|center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Register Account"
+                android:textSize="26sp"
+                android:textColor="@color/background"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@id/image_arrow_back_register"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- card container view-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_container_view_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_menu_register">
+
+        <!-- Scroll view-->
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+            <!-- Linear Container-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Enter user name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="User"
+                    android:layout_marginTop="32dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:outlineAmbientShadowColor="@color/titleContent"
+                    android:outlineSpotShadowColor="@color/titleContent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_user_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:drawableRight="@drawable/ic_supervisor_account_black_24dp"
+                        android:textSize="18sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--Enter Email-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Email"
+                    android:layout_marginTop="16dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:outlineAmbientShadowColor="@color/titleContent"
+                    android:outlineSpotShadowColor="@color/titleContent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:drawableRight="@drawable/ic_email_black_24dp"
+                        android:textSize="18sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Enter Password -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Password"
+                    android:layout_marginTop="16dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_gravity="center_horizontal|center"
+                    app:passwordToggleEnabled="true"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:drawableRight="@drawable/ic_supervisor_account_black_24dp"
+                        android:textSize="18sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Enter Confrim Password -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Password"
+                    android:layout_marginTop="16dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_gravity="center_horizontal|center"
+                    app:passwordToggleEnabled="true"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password_confrim_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:drawableRight="@drawable/ic_supervisor_account_black_24dp"
+                        android:textSize="18sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- button action-->
+                <!-- button Register  -->
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Register"
+                    android:layout_marginTop="62dp"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/background"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:backgroundTint="@color/registerContent"
+                    android:background="@drawable/button_login_corner"/>
+
+                <!-- button register  -->
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:id="@+id/btn_to_login_register"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:maxWidth="100dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/facebookColor"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginBottom="50dp"/>
+
+                <!-- text breck line-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="User Login And Register"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal|center"
+                    android:layout_gravity="center_horizontal|bottom"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

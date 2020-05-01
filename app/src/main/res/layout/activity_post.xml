@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <!-- image circle -->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/image_circle_profile_post"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/bg_profile"
+        app:c_background_color="@color/background"
+        app:c_border="true"
+        app:c_border_color="@color/background"
+        app:c_border_width="0.5dp"
+        app:c_shadow="true"
+        app:c_shadow_color="@android:color/darker_gray"
+        app:c_shadow_gravity="end"
+        app:c_shadow_radius="5.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txt_post_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="46dp"
+        android:singleLine="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine|textCapSentences"
+        android:imeOptions="actionDone"
+        android:scrollbars="vertical"
+        />
+
+    <!-- chip open image -->
+    <ImageButton
+        android:id="@+id/btn_open_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/icon_new_post"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/image_post_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"/>
+
+    <!-- image -->
+    <ImageView
+        android:id="@+id/image_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="invisible"
+        />
+
+    <!-- button apply post -->
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:textSize="18sp"
+        android:textColor="@color/background"
+        android:backgroundTint="@color/facebookColor"
+        android:background="@drawable/btn_bg_corner"
+        android:textAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/image_post_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

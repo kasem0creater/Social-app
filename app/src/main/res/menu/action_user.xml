@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popup_block"
+        android:title="Block"/>
+    <item
+        android:id="@+id/popup_un_block"
+        android:title="UnBlock"/>
+</menu>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/facebookColor</item>
+        <item name="colorPrimaryDark">@color/facebookColor</item>
+        <item name="colorAccent">@color/facebookTitle</item>
+    </style>
+
+    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/titleContent</item>
+        <item name="colorPrimaryDark">@color/title</item>
+        <item name="colorAccent">@color/titleContent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeRegister" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/registerContent</item>
+        <item name="colorPrimaryDark">@color/registerBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

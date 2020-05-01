@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#FFFCF9</color>
+    <color name="backgroundWhiteCard">#F8F8F8</color>
+    <color name="buttonLogin">#00A1FF</color>
+    <color name="titleContent">#785CD6</color>
+    <color name="title">#5654FF</color>
+    <color name="registerBackground">#F95616</color>
+    <color name="registerContent">#F97540</color>
+    <color name="facebookColor">#0078FF</color>
+    <color name="facebookTitle">#01A7FF</color>
+    <color name="editBackground">#00C174</color>
+    <color name="editAccent">#0AB245</color>
+    <color name="dark_grey">#f0f0f0</color>
+    <color name="back_comment">#F2F3F5</color>
+</resources>

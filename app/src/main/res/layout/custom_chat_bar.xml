@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/facebookColor">
+
+
+    <!-- Image friend-->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/image_profile_chat"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_profile"
+        app:c_background_color="@color/colorPrimary"
+        app:c_border="true"
+        app:c_border_color="#4A97E4"
+        app:c_border_width="1dp"
+        app:c_shadow="true"
+        app:c_shadow_color="#000"
+        app:c_shadow_gravity="end"
+        app:c_shadow_radius="5.5" />
+
+    <!-- //status online -->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_status_chat"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@color/editBackground"
+        app:c_background_color="@color/colorPrimary"
+        app:c_border="true"
+        app:c_border_color="#4A97E4"
+        app:c_border_width="1dp"
+        app:c_shadow="true"
+        app:c_shadow_color="#000"
+        app:c_shadow_gravity="end"
+        app:c_shadow_radius="1.5"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@id/image_profile_chat"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"/>
+
+    <!-- Display Friend Name -->
+    <TextView
+        android:id="@+id/txt_user_name_friend"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="User Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image_profile_chat"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>

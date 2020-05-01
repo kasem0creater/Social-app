@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/image_user_message_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_profile"
+        app:c_background_color="@color/colorPrimary"
+        app:c_border="true"
+        app:c_border_color="#4A97E4"
+        app:c_border_width="1dp"
+        app:c_shadow="true"
+        app:c_shadow_color="#000"
+        app:c_shadow_gravity="end"
+        app:c_shadow_radius="5.5" />
+
+    <TextView
+        android:id="@+id/txt_friend_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/receiver_message_layout"
+        android:hint="receiver message here"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_toRightOf="@+id/image_user_message_layout" />
+
+
+    <!-- case user send Images file-->
+    <ImageView
+        android:id="@+id/image_message_sender"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/image_message_friend"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/txt_sender_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/txt_friend_message"
+        android:background="@drawable/sender_message_layout"
+        android:hint="sender message here"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

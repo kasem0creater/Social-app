@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_tile_login"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center"
+            android:gravity="center_horizontal|center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login App"
+                android:textSize="24sp"
+                android:textColor="@color/background"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--card container view-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_container_view_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_tile_login">
+
+        <!--scrollview -->
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+            <!-- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:gravity="center_horizontal|center"
+                android:orientation="vertical">
+
+                <!--Enter user name -->
+                <!--Enter user name -->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_user_login"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoComplete"
+                    android:drawableRight="@drawable/ic_supervisor_account_black_24dp"
+                    android:textSize="18sp"/>
+
+
+                <!--Enter user name -->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_password_login"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"/>
+
+
+
+
+                <!-- text view show forgot pass-->
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal|right"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="62dp">
+                    <!-- forgot password user-->
+                    <TextView
+                        android:id="@+id/txt_reset_password_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <!-- button login  -->
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:layout_marginTop="62dp"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/background"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/button_login_corner"/>
+
+                <!-- button register  -->
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/btn_to_register_login"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:maxWidth="100dp"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/titleContent"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginBottom="50dp"/>
+
+                <!-- text breck line-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="User Login And Register"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal|center"
+                    android:layout_gravity="center_horizontal|bottom"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

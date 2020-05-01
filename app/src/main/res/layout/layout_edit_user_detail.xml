@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:cardCornerRadius="16dp"
+        android:padding="20dp"
+        android:elevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- edit name -->
+
+                <EditText
+                    android:id="@+id/txt_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:hint="name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"/>
+
+            <!-- edit nick name -->
+
+                <EditText
+                    android:id="@+id/txt_edit_nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:hint="nick name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"/>
+
+
+            <!-- button ko and cancel -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="33dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|center"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- exit -->
+                <ImageButton
+                    android:id="@+id/btn_edit_cancel"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_exit"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <!-- ok -->
+                    <ImageButton
+                        android:id="@+id/btn_edit_ok"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_ok"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

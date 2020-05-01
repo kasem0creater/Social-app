@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+       <RelativeLayout
+           android:layout_width="50dp"
+           android:layout_height="50dp">
+
+           <!-- image circle -->
+           <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/image_group"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/bg_profile"
+               app:c_background_color="@color/colorPrimary"
+               app:c_border="true"
+               app:c_border_color="#4A97E4"
+               app:c_border_width="1dp"
+               app:c_shadow="true"
+               app:c_shadow_color="#000"
+               app:c_shadow_gravity="end"
+               app:c_shadow_radius="5.5"
+               android:layout_marginRight="2dp"/>
+
+           <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/image_status_"
+               android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:background="@color/editBackground"
+               app:c_background_color="@color/colorPrimary"
+               app:c_border="true"
+               app:c_border_color="#4A97E4"
+               app:c_border_width="1dp"
+               app:c_shadow="true"
+               app:c_shadow_color="#000"
+               app:c_shadow_gravity="end"
+               app:c_shadow_radius="1.5"
+               android:layout_marginRight="2dp"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="14dp"
+               android:visibility="invisible"/>
+
+       </RelativeLayout>
+
+        <!-- detail user -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal|center">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <!-- name -->
+               <TextView
+                   android:id="@+id/txt_all_user_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="User name"
+                   android:textSize="14dp"
+                   android:textStyle="bold"/>
+
+               <!-- nick name -->
+               <TextView
+                   android:id="@+id/txt_all_user_nick_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="User name"
+                   android:textSize="13dp" />
+
+           </LinearLayout>
+
+            <!-- menu setting -->
+            <ImageButton
+                android:id="@+id/btn_setting_user"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_more_vertical"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

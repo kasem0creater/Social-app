@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/popup_setting"
+        android:icon="@drawable/icon_setting_app"
+        app:showAsAction="always"
+        android:title="setting"/>
+
+    <item
+        android:id="@+id/popup_notify"
+        android:icon="@drawable/icon_setting_app"
+        app:showAsAction="always"
+        android:title="notifications"/>
+
+    <item
+        android:id="@+id/popup_group"
+        android:icon="@drawable/icon_setting_app"
+        app:showAsAction="always"
+        android:title="Create Group"/>
+    <item
+        android:id="@+id/popup_access_group"
+        android:icon="@drawable/icon_setting_app"
+        app:showAsAction="always"
+        android:title="Groups"/>
+
+</menu>

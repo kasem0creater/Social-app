@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!-- image circle -->
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_group_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_profile"
+        app:c_background_color="@color/backgroundWhiteCard"
+        app:c_border="true"
+        app:c_border_color="@color/backgroundWhiteCard"
+        app:c_border_width="1dp"
+        app:c_shadow="true"
+        app:c_shadow_color="@color/backgroundWhiteCard"
+        app:c_shadow_gravity="end"
+        app:c_shadow_radius="5.5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
+
+    <!-- show group name or group title -->
+    <TextView
+        android:id="@+id/txt_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="group name"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/image_group_icon"
+        android:layout_centerInParent="true"/>
+    
+    <ImageButton
+        android:id="@+id/btn_group_info"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_group_info"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"/>
+
+
+</RelativeLayout>
